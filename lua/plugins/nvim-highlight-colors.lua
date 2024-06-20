@@ -4,7 +4,8 @@ return {
     opts = {
       ---Render style
       ---@usage 'background'|'foreground'|'virtual'
-      render = "virtual",
+      ---Until https://github.com/brenoprata10/nvim-highlight-colors/issues/80 is fixed, `virtual` is not recommended
+      render = "background",
 
       ---Set virtual symbol (requires render to be set to 'virtual')
       virtual_symbol = "■",
